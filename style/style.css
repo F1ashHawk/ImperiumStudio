@@ -1,0 +1,81 @@
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Forum', cursive;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #E0E0E0;
+    background-color: black;
+}
+
+
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+
+
+/* стилевой класс, который управляет шириной контейнера сетки*/
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1260px;
+    padding: 0;
+    background-color: #222222;
+}
+
+.header-index {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.header-logo {
+    margin: 0;
+    width: 100%;
+    justify-content: start;
+}
+
+.header-number {
+    font-family: 'Forum', cursive;
+    text-align: right;
+    font-size: 30px;
+    align-self: center;
+    padding-right: 14.4%;
+}
+
+.header-languages {
+    align-self: center;
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+}
