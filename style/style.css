@@ -54,6 +54,9 @@ body {
     background-color: #222222;
 }
 
+
+/* ШАПКА */
+
 .header-index {
     margin-top: 20px;
     display: grid;
@@ -79,3 +82,8 @@ body {
     font-family: 'Forum', cursive;
     font-size: 30px;
 }
+
+
+/* МЭЙН */
+
+.about-imperium {}
