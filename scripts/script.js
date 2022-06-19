@@ -1,38 +1,40 @@
-var buttons = document.querySelectorAll(".photo-carusel-link");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-for (var button of buttons) {
-    button.addEventListener('click', function() {
-        buttons.forEach(i => i.classList.remove('photo-carusel-link-active'));
-
-        this.classList.toggle('photo-carusel-link-active');
-    });
-};
-
-const testimonials = document.querySelector('.slider-wrapper');
-const scroller = document.querySelector('.slider__items');
-const nextBtn = document.querySelector('.slider-btn-next');
-const prevBtn = document.querySelector('.slider-btn-prev');
-const itemWidth = document.querySelector('.slider__item').clientWidth;
-
-nextBtn.addEventListener('click', scrollToNextItem);
-prevBtn.addEventListener('click', scrollToPrevItem);
-
-function scrollToNextItem() {
-    if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth))
-    // Позиция прокрутки расположена не в начале последнего элемента
-        scroller.scrollBy({ left: itemWidth, top: 0, behavior: 'smooth' });
-    else
-    // Достигнут последний элемент. Возвращаемся к первому элементу, установив для позиции прокрутки 0
-        scroller.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function plusSlide() {
+    showSlides(slideIndex += 1);
 }
 
-function scrollToPrevItem() {
-    if (scroller.scrollLeft != 0)
-    // Позиция прокрутки расположена не в начале последнего элемента
-        scroller.scrollBy({ left: -itemWidth, top: 0, behavior: 'smooth' });
-    else
-    // Это первый элемент. Переходим к последнему элементу, установив для позиции прокрутки ширину скроллера
-        scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function minusSlide() {
+    showSlides(slideIndex -= 1);
+}
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("about-slider__item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 $(function() {
@@ -51,4 +53,11 @@ $(function() {
             $video.load();
         }
     });
+});
+
+$('.multiple-items').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
 });

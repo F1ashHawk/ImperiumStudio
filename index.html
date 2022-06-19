@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
@@ -63,30 +66,24 @@
                 <hr class="header-hr">
                 <div class="your-teacher-section">
                     <div class="photo-carusel-list">
-                        <div class="slides">
-                            <div id="slide-1">
+                        <div class="slider multiple-items">
+                            <div>
                                 <img class="kate-photo" src="images/carusel-kate/DSC00010 1.jpg" alt="">
                             </div>
-                            <div id="slide-2">
+                            <div>
                                 <img class="kate-photo" src="images/carusel-kate/DSC00027 copy 1.jpg" alt="">
                             </div>
-                            <div id="slide-3">
+                            <div>
                                 <img class="kate-photo" src="images/carusel-kate/DSC00084_2 copy 1.jpg" alt="">
                             </div>
-                            <div id="slide-4">
+                            <div>
                                 <img class="kate-photo" src="images/carusel-kate/DSC00168 1.jpg" alt="">
                             </div>
-                            <div id="slide-5">
+                            <div>
                                 <img class="kate-photo" src="images/carusel-kate/DSC00288-2 1.jpg" alt="">
                             </div>
                         </div>
-                        <div class="photo-carusel-links">
-                            <a class="photo-carusel-link photo-carusel-link-active" href="#slide-1"></a>
-                            <a class="photo-carusel-link" href="#slide-2"></a>
-                            <a class="photo-carusel-link" href="#slide-3"></a>
-                            <a class="photo-carusel-link" href="#slide-4"></a>
-                            <a class="photo-carusel-link" href="#slide-5"></a>
-                        </div>
+
 
                     </div>
                     <div class="medal">
@@ -138,18 +135,19 @@
                 <hr class="header-hr">
 
                 <div class="about-studio-carusel">
-                    <div class="slider-wrapper">
-                        <div class="slider__items">
-                            <img class="slider__item" src="images/carusel-about/DSCF0352.jpg" alt="">
-                            <img class="slider__item" src="images/carusel-about/DSCF0363.jpg" alt="">
-                            <img class="slider__item" src="images/carusel-about/DSCF0375.jpg" alt="">
-                            <img class="slider__item" src="images/carusel-about/DSCF0377.jpg" alt="">
-                            <img class="slider__item" src="images/carusel-about/DSCF0388.jpg" alt="">
+                    <div class="about-slider">
+                        <div class="about-slider-list">
+                            <img class="about-slider__item" src="images/carusel-about/DSCF0352.png" alt="">
+                            <img class="about-slider__item" src="images/carusel-about/DSCF0363.png" alt="">
+                            <img class="about-slider__item" src="images/carusel-about/DSCF0375.png" alt="">
+                            <img class="about-slider__item" src="images/carusel-about/DSCF0377.png" alt="">
+                            <img class="about-slider__item" src="images/carusel-about/DSCF0388.png" alt="">
                         </div>
                     </div>
+
                     <div class="about-studio-button-block">
-                        <span class="slider-btn-next slider-btn"></span>
-                        <span class="slider-btn-prev slider-btn"></span>
+                        <span class="about-slider-next about-slider-btn" onclick="plusSlide()"></span>
+                        <span class="about-slider-prev about-slider-btn" onclick="minusSlide()"></span>
                     </div>
                 </div>
 
@@ -433,6 +431,17 @@
     </footer>
 
 
+    <script src="scripts/script.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/slick/slick.min.js"></script>
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    </script>
     <script src="scripts/script.js"></script>
 
 </body>

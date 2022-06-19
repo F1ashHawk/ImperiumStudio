@@ -110,6 +110,10 @@
         .about-imperium-text {
             grid-area: about-imperium-text;
             width: 391px;
+            font-size: 25px;
+            line-height: 140%;
+            display: grid;
+            align-content: space-between;
         }
         
         .about-imperium-img {
@@ -132,12 +136,6 @@
             font-size: 54px;
             line-height: 60px;
             color: #FFC915;
-        }
-        
-        .about-imperium-text {
-            display: grid;
-            margin-top: 60px;
-            align-items: stretch;
         }
         
         .about-imperium-item {
@@ -215,78 +213,65 @@
             grid-area: your-teacher-text-block;
             font-size: 25px;
             line-height: 140%;
+            width: 804px;
             height: 770px;
             display: grid;
             align-items: stretch;
         }
         
+        .p-text a {
+            color: #00AFF0;
+        }
+        
         .photo-carusel-list {
             box-sizing: border-box;
             width: 320px;
-            height: 490px;
+            height: 495px;
             text-align: center;
             overflow: hidden;
         }
         
-        .slides {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        .slides div {
-            scroll-snap-align: start;
-            flex-shrink: 0;
-            background: #eee;
-            transform-origin: center center;
-            transform: scale(1);
-            transition: transform 0.5s;
+        .slick-dots {
             position: relative;
-        }
-        
-        .kate-photo {
-            width: 320px;
-            height: 445px;
-        }
-        
-        .slidera {
-            display: inline-flex;
-            width: 1.5rem;
-            height: 1.5rem;
-            background: white;
-            text-decoration: none;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 0 0.5rem 0;
-            position: relative;
-        }
-        
-        .slides::-webkit-scrollbar {
-            width: 0;
-        }
-        
-        .photo-carusel-links {
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 55%;
+            height: 40px;
         }
         
-        .photo-carusel-link {
+        .slick-dots li {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slick-dots li button {
             width: 15px;
             height: 15px;
             border-radius: 50%;
             border: 0.5px solid #E0E0E0;
         }
         
-        .photo-carusel-link-active {
-            background-image: url("../images/icons/Group\ 60.svg");
-            width: 27px;
-            height: 27px;
+        li.slick-active button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #FFC915;
+        }
+        
+        .slick-active button::before {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #FFC915;
+        }
+        
+        .kate-photo {
+            width: 320px;
+            height: 445px;
+            margin-bottom: 15px;
         }
         /*  */
         /* Центровое примечание */
@@ -299,7 +284,7 @@
         
         .center-hr {
             background-color: #FFC915;
-            border-color: 0.5px solid #FFC915;
+            border: 1px solid #FFC915;
             color: #FFC915;
             width: 33.3%;
             margin: 0 auto;
@@ -332,6 +317,11 @@
             line-height: 140%;
             align-items: stretch;
         }
+        
+        .center-text-p a {
+            color: #00AFF0;
+            text-decoration: underline;
+        }
         /*  */
         /* Секция 3 */
         /*  */
@@ -342,22 +332,22 @@
             margin-bottom: 70px;
         }
         
-        .slider-wrapper {
-            max-width: 1066px;
+        .about-slider {
+            width: 1066px;
             max-height: 596px;
         }
         
-        .slider__items {
+        .about-slider-list {
             overflow-x: scroll;
             display: flex;
             scroll-snap-type: x mandatory;
         }
         
-        .slider__items::-webkit-scrollbar {
+        .about-slider-list::-webkit-scrollbar {
             width: 0;
         }
         
-        .slider__item {
+        .about-slider__item {
             min-width: 100%;
             max-height: 596px;
             scroll-snap-align: center;
@@ -371,13 +361,13 @@
             margin-left: 74px;
         }
         
-        .slider-btn {
+        .about-slider-btn {
             max-width: 67px;
             max-height: 60px;
             transition: .7s ease-in-out;
         }
         
-        .slider-btn-next {
+        .about-slider-next {
             display: block;
             background-image: url(../images/icons/carusel-btn-nxt-nor.svg);
             width: 67px;
@@ -385,7 +375,7 @@
             background-repeat: no-repeat;
         }
         
-        .slider-btn-next:hover {
+        .about-slider-next:hover {
             display: block;
             background-image: url(../images/icons/carusel-btn-nxt-hover.svg);
             width: 67px;
@@ -393,7 +383,7 @@
             background-repeat: no-repeat;
         }
         
-        .slider-btn-next:active {
+        .about-slider-next:active {
             display: block;
             background-image: url(../images/icons/carusel-btn-nxt-active.svg);
             width: 67px;
@@ -401,7 +391,7 @@
             background-repeat: no-repeat;
         }
         
-        .slider-btn-prev {
+        .about-slider-prev {
             display: block;
             background-image: url(../images/icons/carusel-btn-prv-nor.svg);
             width: 67px;
@@ -485,6 +475,10 @@
             display: grid;
             align-content: space-between;
             margin-bottom: 61px;
+        }
+        
+        .pluses-webcam-item:last-child {
+            margin-bottom: 0;
         }
         
         .pluses-webcam-text {
@@ -573,7 +567,7 @@
             line-height: 59px;
             text-align: center;
             color: #FFC915;
-            margin-top: 38px;
+            margin-top: auto;
         }
         
         .calculator-earn-text {
@@ -583,6 +577,7 @@
             line-height: 22px;
             text-align: center;
             margin: 0 auto;
+            padding-top: 11px;
         }
         
         .adventages-text-block {
@@ -647,7 +642,10 @@
         }
         
         .start-work-text-block {
+            height: 100%;
             margin-left: 25px;
+            display: grid;
+            align-content: space-between;
         }
         
         .start-work-text:not(:first-child) {
@@ -661,11 +659,21 @@
         }
         
         .start-work-button {
+            font-size: 18px;
+            line-height: 18px;
             width: 62%;
             height: 53px;
             color: #FFC915;
             background: rgba(255, 201, 21, 0.2);
             border: 1px solid #FFC915;
+        }
+        
+        .start-work-item:nth-child(4) p {
+            width: 280px;
+        }
+        
+        .start-work-item:nth-child(6) p {
+            width: 225px;
         }
         /*  */
         /* Секция 8 */
