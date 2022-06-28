@@ -38,7 +38,8 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #e0e0e0;
-  background-color: #000000;
+  background-color: #131313;
+  height: 100%;
 }
 
 section {
@@ -54,10 +55,34 @@ section {
   overflow: hidden;
 }
 
-/* ШАПКА */
+.vertical-lines {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1260px;
+  z-index: -1;
+}
+.line {
+  width: 100%;
+  position: relative;
+}
+.line::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  opacity: 0.2;
+  height: 2000px;
+}
 
+/* ШАПКА */
+.header-back {
+  width: 100%;
+}
 .header-index {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   height: 150px;
   font-family: "Forum";
@@ -65,6 +90,10 @@ section {
   font-size: 30px;
   line-height: 33px;
   text-align: right;
+}
+.header-index-right-block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -84,8 +113,6 @@ section {
   display: flex;
   width: 96px;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: 309px;
 }
 
 /*  */
@@ -95,18 +122,20 @@ section {
 .about-imperium {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 7fr 9fr;
   gap: 0px 0px;
   grid-template-areas: "main-imperium-name about-imperium-img-div about-imperium-img-div" "about-imperium-text about-imperium-img-div about-imperium-img-div" ". . .";
 }
 
 .main-imperium-name {
+  position: relative;
   grid-area: main-imperium-name;
+  top: -30px;
 }
 
 .about-imperium-img-div {
   grid-area: about-imperium-img-div;
-  margin-left: -295px;
+  margin-left: -301px;
   overflow: hidden;
 }
 
@@ -190,7 +219,7 @@ section {
 .your-teacher-section {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr 190px;
   gap: 0px 0px;
   grid-template-areas: "photo-carusel-list your-teacher-text-block ." "medal your-teacher-text-block ." ". . .";
 }
@@ -221,8 +250,8 @@ section {
   grid-area: your-teacher-text-block;
   font-size: 25px;
   line-height: 140%;
-  width: 100%;
-  height: 91%;
+  width: 95.8%;
+  height: 100%;
   display: grid;
   align-items: stretch;
 }
@@ -285,7 +314,8 @@ li.slick-active button {
 
 .center-hr {
   background-color: #ffc915;
-  border: 1px solid #ffc915;
+  border: #ffc915 dashed 0.5px;
+
   color: #ffc915;
   width: 33.3%;
   margin: 0 auto;
@@ -725,10 +755,8 @@ li.slick-active button {
   position: relative;
   margin: auto;
   background-color: #1b1b1b;
-  max-width: 800px;
-  max-height: 1070px;
   width: 68%;
-  height: 90%;
+  height: 80%;
 }
 
 .start-work-form {
@@ -1157,17 +1185,344 @@ section:last-child {
 }
 
 @media screen and (max-width: 1260px) {
+  section {
+    margin-bottom: 120px;
+  }
   .container {
     width: 910px;
   }
+  .vertical-lines {
+    width: 910px;
+  }
+  .about-imperium-text {
+    width: 54%;
+  }
+  .about-imperium-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .your-teacher-section {
+    grid-template-rows: 1fr 1fr;
+  }
   .photo-carusel-list {
     width: 90%;
+    height: 99%;
+  }
+
+  .medal {
+    width: 90%;
+  }
+  .medal-img {
+    width: 180px;
+    height: 180px;
+    margin: 60px auto;
+  }
+  .your-teacher-text-block {
+    height: 102%;
+    width: 100%;
+  }
+  .photo-carusel-list {
+    width: 287px;
+    height: 496px;
+  }
+  .kate-photo {
+    width: 287px;
+    height: 445px;
+  }
+  .center-hr {
+    width: 31.7%;
+  }
+
+  .about-webcam-img-block {
+    display: none;
+  }
+  .about-webcam-text {
+    width: 100%;
+    height: 343px;
+    align-content: space-between;
+  }
+  .who-we-search-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 373px;
+    justify-content: space-between;
+  }
+  .who-we-search-item {
+    width: 50%;
+    justify-content: center;
+  }
+  .who-we-search-number {
+    width: 132px;
+  }
+  .pluses-webcam-krown {
+    display: none;
+  }
+  .pluses-webcam {
+    grid-template-columns: 3fr 5fr 5fr;
+  }
+  .pluses-webcam-col {
+    width: 82.5%;
+  }
+  .pluses-webcam-col:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .adventages-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "adventages-crown-block calculator-earn calculator-earn"
+      "adventages-text-block adventages-text-block adventages-text-block"
+      ". . .";
+  }
+  .adventages-crown-block {
+    grid-area: adventages-crown-block;
+    display: grid;
+    align-items: center;
+  }
+  .adventages-crown-img {
+    width: 106px;
+    height: 324px;
+  }
+  .calculator-earn {
+    width: 62%;
+    grid-area: calculator-earn;
+  }
+  .adventages-text-block {
+    margin-top: 60px;
+    grid-area: adventages-text-block;
+  }
+  .adventages-text-item {
+    width: 48.7%;
+  }
+
+  .start-work-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    gap: 40px;
+  }
+  .start-work-item {
+    width: 46.2%;
+    height: 28%;
+  }
+  .start-work-number {
+    min-width: 132px;
+    display: block;
+    line-height: 170px;
+  }
+  .start-work-button {
+    width: 71%;
+  }
+  #myVideo {
+    width: 100%;
+    height: 100%;
+  }
+  #video-play {
+    width: 13.5%;
+    height: 34%;
+  }
+  .contacts-logo {
+    width: 25%;
   }
 }
 
 @media screen and (max-width: 999px) {
+  section {
+    margin-bottom: 100px;
+  }
   .container {
     width: 737px;
+  }
+  .vertical-lines {
+    width: 737px;
+  }
+  .header-back {
+    background-color: #1b1b1b;
+  }
+  .header-index {
+    width: 737px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .header-logo {
+    width: 55px;
+  }
+  .header-index-right-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-networks {
+    display: none;
+  }
+  .header-burger {
+    display: block;
+    width: 43px;
+  }
+  .about-imperium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-imperium-name {
+    width: 100%;
+    text-align: center;
+    top: 0;
+    margin: 50px 0 65px;
+  }
+  .main-imperium-name-h1 {
+    font-size: 130px;
+    line-height: 144px;
+    left: 0;
+  }
+  .main-imperium-name h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .about-imperium-img-div {
+    width: 358px;
+    margin-left: 0;
+    order: 1;
+  }
+  .about-imperium-img {
+  }
+  .about-imperium-text {
+    width: 348px;
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .section-header-description {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .section-header-number {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .photo-carusel-list {
+    width: 200px;
+    height: 418px;
+    text-align: center;
+  }
+  .kate-photo {
+    position: relative;
+    width: 130%;
+    height: 368px;
+    overflow: hidden;
+  }
+  .slick-dots {
+    width: 78%;
+  }
+  .your-teacher-text-block {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .medal-img {
+    width: 146px;
+    height: 146px;
+  }
+  .center-text-p {
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .about-webcam-text {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .about-studio-text {
+    font-size: 22px;
+    line-height: 140%;
+    width: 100%;
+    min-height: 392px;
+  }
+  .who-we-search-list {
+    height: 343px;
+  }
+  .who-we-search-text {
+    font-size: 20px;
+  }
+  .who-we-search-number {
+    width: 106px;
+    padding-right: 0;
+  }
+  .who-we-search-item {
+    width: 52%;
+  }
+  .pluses-webcam-col:first-child {
+    display: none;
+  }
+  .pluses-webcam {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pluses-webcam-col {
+    width: 74%;
+    margin: 0 auto;
+  }
+  .pluses-webcam-col:nth-child(3) {
+    margin: 0 auto;
+  }
+  .pluses-webcam-text {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .calculator-earn {
+    width: 76.5%;
+  }
+  #calculator-earn-for div label {
+    font-size: 18px;
+  }
+  .adventages-text-block {
+    margin-top: 30px;
+  }
+  .adventages-work {
+    grid-template-rows: 2fr 9fr;
+  }
+  .adventages-text-h {
+    font-size: 28px;
+    line-height: 31px;
+  }
+  .adventages-text-item-p {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .start-work-list {
+    gap: 25px;
+  }
+  .start-work-number {
+    min-width: 106px;
+  }
+  .start-work-item {
+    width: 360px;
+  }
+  #video-play {
+    width: 120px;
+    height: 120px;
+  }
+  #video {
+    height: 421px;
+  }
+  #myVideo {
+    width: 140%;
+  }
+  .contacts {
+    grid-template-columns: 2fr 1fr;
+  }
+  .contacts-adress {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  .contacts-logo {
+    width: 100px;
+    height: 86px;
+  }
+  .index-footer {
+    height: 100px;
   }
 }
 
