@@ -42,7 +42,7 @@ $('.about-slider-list').slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     variableWidth: true,
     responsive: [

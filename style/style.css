@@ -66,6 +66,9 @@ section {
   width: 100%;
   position: relative;
 }
+.line:nth-child(2):before {
+  border: 0;
+}
 .line::before {
   content: "";
   display: block;
@@ -221,9 +224,12 @@ section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 99999;
+  top: 0;
+  transition: all 0.3s ease 0s;
 }
 .burger-form-background-close {
-  display: none;
+  top: -100%;
+  transition: all 0.3s ease 0s;
 }
 
 .burger-form {
@@ -1696,6 +1702,12 @@ section:last-child {
   .vertical-lines {
     width: 440px;
   }
+  .line:nth-child(1)::before {
+    border-right: 0;
+  }
+  .line:nth-child(3)::before {
+    border-left: 0;
+  }
 
   .header-index {
     width: 440px;
@@ -1983,5 +1995,89 @@ section:last-child {
 @media screen and (max-width: 479px) {
   .container {
     width: 320px;
+  }
+  .vertical-lines {
+    width: 320px;
+  }
+  .header-index {
+    width: 320px;
+  }
+  .main-imperium-name {
+    height: 128px;
+    margin: 24px 0;
+  }
+  .main-imperium-name-h1 {
+    font-size: 82px;
+    line-height: 91px;
+  }
+  .main-imperium-name h2 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .about-imperium-text {
+    height: 170px;
+  }
+  .section-header {
+    display: flex;
+  }
+  .section-header-number {
+    margin-right: 17px;
+    margin-left: 0;
+  }
+  .section-header-description {
+    font-size: 24px;
+  }
+  .header-hr {
+    width: 88%;
+  }
+  .photo-carusel-list {
+    height: 280px;
+  }
+  .slick-slide {
+    width: 201px;
+    margin-right: 20px;
+  }
+  .kate-photo {
+    width: 201px;
+    height: 280px;
+  }
+  .your-teacher-text-block {
+    height: 744px;
+  }
+
+  .medal-img {
+    width: 160px;
+    height: 160px;
+  }
+  .about-webcam-text {
+    height: 390px;
+  }
+  .center-text-block:nth-child(1) .center-text-p {
+    font-size: 16px;
+  }
+  .about-slider {
+    width: 100%;
+  }
+  .about-slider .slick-slide {
+    width: 280px;
+  }
+  .about-studio-text {
+    height: 456px;
+  }
+  .pluses-webcam-col {
+    width: 100%;
+  }
+  .calculator-earn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .adventages-text-list {
+    height: 2588px;
+  }
+  #video {
+    height: 183px;
+  }
+  .burger-section-container {
+    width: 326px;
   }
 }
