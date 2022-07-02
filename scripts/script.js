@@ -44,7 +44,7 @@ $('.about-slider-list').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    
+    variableWidth: true,
     responsive: [
         {
             breakpoint: 768,
@@ -83,7 +83,8 @@ $('.about-slider-list').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          variableWidth: true
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -124,6 +125,8 @@ document.getElementById('close-start-form-button').addEventListener('click',func
     document.getElementById('start-form-overlay').classList.add('start-form-overlay-close')
 })
 
+
+
 // document.getElementById('start-form-overlay').addEventListener('click',function(){
 //     document.getElementById('start-form-overlay').classList.add('start-form-overlay-close')
 // })
@@ -135,6 +138,8 @@ document.getElementById('header-burger').addEventListener('click', function(){
 document.getElementById('close-burger').addEventListener('click', function(){
     document.getElementById('burger-form-background').classList.add('burger-form-background-close')
 })
+
+
 
 $('input[name="calc-hour-day"],input[name="calc-day-week"],input[name="calc-earn-for"]').bind('input',calcAndShow);
 

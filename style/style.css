@@ -2085,7 +2085,6 @@ section:last-child {
   }
   .slick-slide {
     width: 201px;
-    margin-right: 20px;
   }
   .kate-photo {
     width: 201px;
@@ -2131,6 +2130,10 @@ section:last-child {
     width: 326px;
   }
   #start-form {
+    position: absolute;
+    overflow: auto;
+
+    max-height: 920px;
     width: 100%;
     height: 100%;
   }
