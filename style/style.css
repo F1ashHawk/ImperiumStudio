@@ -87,12 +87,13 @@ section {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  height: 150px;
+  height: 120px;
   font-family: "Forum";
   font-weight: 400;
   font-size: 30px;
   line-height: 33px;
   text-align: right;
+  margin-bottom: 15px;
 }
 .header-index-right-block {
   display: flex;
@@ -138,13 +139,13 @@ section {
 
 .about-imperium-img-div {
   grid-area: about-imperium-img-div;
-  margin-left: -301px;
+  margin-left: -293px;
   overflow: hidden;
 }
 
 .about-imperium-text {
   grid-area: about-imperium-text;
-  width: 50%;
+  width: 52%;
   font-size: 25px;
   line-height: 140%;
   display: grid;
@@ -192,7 +193,7 @@ section {
 
 .section-header-number {
   font-family: "Forum";
-  font-size: 53px;
+  font-size: 52px;
   line-height: 60px;
   color: #ffc915;
   margin-right: 14.3%;
@@ -201,7 +202,7 @@ section {
 
 .section-header-description {
   font-family: "Forum";
-  font-size: 53px;
+  font-size: 52px;
   line-height: 60px;
   color: #ffc915;
 }
@@ -228,7 +229,7 @@ section {
   transition: all 0.3s ease 0s;
 }
 .burger-form-background-close {
-  top: -100%;
+  top: -230%;
   transition: all 0.3s ease 0s;
 }
 
@@ -374,7 +375,9 @@ section {
   text-align: center;
   overflow: hidden;
 }
-
+.delete-text {
+  display: inline;
+}
 .medal {
   grid-area: medal;
   width: 76%;
@@ -400,6 +403,9 @@ section {
 
 .p-text a {
   color: #00aff0;
+}
+.p-text span {
+  color: #ffc915;
 }
 
 .slick-dots {
@@ -511,6 +517,9 @@ li.slick-active button {
 .about-slider {
   width: 1066px;
   max-height: 596px;
+}
+.yellow-text {
+  display: inline;
 }
 
 .about-slider-list {
@@ -640,6 +649,7 @@ li.slick-active button {
 }
 
 .pluses-webcam-col:first-child {
+  width: 100%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -898,8 +908,8 @@ li.slick-active button {
   position: relative;
   margin: auto;
   background-color: #1b1b1b;
-  width: 68%;
-  height: 80%;
+  width: 550px;
+  height: 650px;
 }
 
 .start-work-form {
@@ -910,10 +920,10 @@ li.slick-active button {
   padding: 0;
   top: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
-  margin: 10px;
+  margin: 26px;
 }
 .start-form-container {
   height: 100%;
@@ -921,14 +931,15 @@ li.slick-active button {
   text-align: center;
   width: 91%;
   margin: 0 auto;
+  padding: 50px 0 30px;
   align-content: space-around;
 }
 
 .start-form-h {
   text-align: start;
   font-family: "Forum";
-  font-size: 54px;
-  line-height: 60px;
+  font-size: 32px;
+  line-height: 35px;
   margin-bottom: 2%;
 }
 
@@ -939,7 +950,7 @@ li.slick-active button {
 .start-form-data-list {
   display: flex;
   justify-content: space-between;
-  height: 113px;
+  height: 72px;
 }
 
 .start-form-data-item {
@@ -949,30 +960,31 @@ li.slick-active button {
   width: 26%;
 }
 .start-form-lvl {
-  height: 113px;
+  height: 72px;
   display: grid;
   align-content: space-between;
 }
 .start-form-h4 {
-  font-size: 30px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 22px;
 }
 .start-form-send-block {
   margin: 0 auto;
-  width: 48%;
-  height: 124px;
+  width: 240px;
+  height: 84px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .start-form-send {
   display: block;
-  width: 100%;
-  height: 49%;
+  width: 55%;
+  height: 40px;
   background-color: #ffc915;
   font-family: "Roboto";
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 19px;
   border: 0;
 }
 .start-form-send:hover {
@@ -981,7 +993,7 @@ li.slick-active button {
   border: 0.5px solid #ffc915;
 }
 .start-form-privacy {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 140%;
   color: #fff;
 }
@@ -992,14 +1004,14 @@ li.slick-active button {
 
 .start-form-input-text {
   width: 100%;
-  height: 60px;
+  height: 30px;
   background-color: transparent;
   border: 0.5px solid #ffc915;
   text-align: center;
   color: #ffc915;
   font-family: "Roboto";
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 19px;
 }
 .start-form-input-text::placeholder {
   color: rgba(255, 201, 21, 0.2);
@@ -1019,7 +1031,7 @@ li.slick-active button {
   position: relative;
 
   width: 100%;
-  height: 60px;
+  height: 30px;
   overflow: hidden;
 }
 
@@ -1058,16 +1070,15 @@ li.slick-active button {
 #button-17 .knobs span {
   content: "YES";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 20px;
+  top: 0;
+  left: 0;
   height: 100%;
   color: #000000;
-  font-size: 20px;
-  line-height: 100%;
+  line-height: 19px;
+  font-size: 16px;
   text-align: center;
-  padding: 9px 4px;
-  width: 50%;
+  padding: 6px 4px;
+  width: 65px;
 }
 
 #button-17 .knobs:before {
@@ -1086,12 +1097,15 @@ li.slick-active button {
 
 #button-17 .checkbox:checked + .knobs:before {
   content: "NO";
-  left: 90px;
+  left: 65px;
 }
 
 #button-17 .checkbox:checked + .knobs span {
-  left: 90px;
+  left: 65px;
   background-color: #ffc915;
+}
+.knobs {
+  border: 1px solid #ffc915;
 }
 
 .start-form-lvl {
@@ -1126,15 +1140,16 @@ li.slick-active button {
 }
 
 .lvl-radio-btn label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: 0.5px solid #ffc915;
-  height: 60px;
+  height: 30px;
   color: #ffc915;
   font-family: "Roboto";
-  font-size: 20px;
-  line-height: 23px;
-  padding-top: 18px;
+  font-size: 16px;
+  line-height: 19px;
   user-select: none;
   cursor: pointer;
 }
@@ -1143,10 +1158,9 @@ li.slick-active button {
   color: #000000;
 }
 
-.start-form-send {
-}
-
-.start-form-privacy {
+.start-form-input-text-size {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 /*  */
@@ -1990,6 +2004,42 @@ section:last-child {
   .burger-section-list {
     width: 90%;
   }
+
+  #start-form {
+    width: 480px;
+    height: 775px;
+  }
+
+  .start-form-h {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+  .start-form-data-item {
+    width: 130px;
+  }
+  .start-form-input-text {
+    height: 40px;
+  }
+  .button {
+    height: 40px;
+  }
+  .lvl-radio-btn label {
+    height: 40px;
+  }
+  .start-form-send-block {
+    width: 320px;
+    height: 114px;
+  }
+  .start-form-send {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .start-form-privacy {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2079,5 +2129,69 @@ section:last-child {
   }
   .burger-section-container {
     width: 326px;
+  }
+  #start-form {
+    width: 100%;
+    height: 100%;
+  }
+  .start-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .start-form-h {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+  .start-form-data-list {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .start-form-data-item {
+    width: 45%;
+    height: 72px;
+  }
+
+  .start-form-data-item:nth-child(3),
+  .start-form-data-item:nth-child(6) {
+    margin-top: 30px;
+  }
+  .start-form-input-text {
+    height: 40px;
+  }
+  .button {
+    height: 40px;
+  }
+  #button-17 .checkbox:checked + .knobs span {
+    left: 50%;
+  }
+  #button-17 .knobs:before,
+  #button-17 .knobs span {
+    width: 50%;
+  }
+  #button-17 .checkbox:checked + .knobs:before {
+    left: 50%;
+  }
+  .lvl-radio-btn label {
+    height: 40px;
+  }
+  .start-form-send-block {
+    width: 100%;
+    height: 114px;
+  }
+  .start-form-send {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .start-form-privacy {
+    font-size: 16px;
+    line-height: 140%;
   }
 }

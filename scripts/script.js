@@ -44,7 +44,7 @@ $('.about-slider-list').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    variableWidth: true,
+    
     responsive: [
         {
             breakpoint: 768,
@@ -62,7 +62,6 @@ $('.about-slider-list').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -146,3 +145,31 @@ function calcAndShow(){
 
     $('#summ').html('$'+8*hours*day*earn)
 }
+// const animItems = document.querySelectorAll('.anim-items');
+
+// if (animItems.length > 0) {
+//   function animOnScroll(params) {
+//     for (let i = 0; i < animItems.length; i++){
+//       const animItem = animItems[i];
+//       const animItemHeight = animItem.offsetHeight;
+//       const animItemOffset = offset (animItem).top;
+//       const animStart = 4;
+
+//       let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+//       if(animItemHeight > window.innerHeight) {
+//         animItemPoint = window.innerHeight - animItemHeight / animStart;
+//       }
+
+//       if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight))
+//     }
+//   }
+
+
+//   function offset(el) {
+//     const rect = el.getBoundingClientRect(),
+//       scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+//       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+//   }
+// }
