@@ -2440,4 +2440,7 @@ section:last-child {
     align-items: flex-start;
     justify-content: space-around;
   }
+  .adventages-text-item {
+    width: 320px;
+  }
 }
