@@ -123,6 +123,7 @@ section {
   display: flex;
   width: 96px;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*  */
@@ -265,10 +266,11 @@ section {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  align-items: center;
 }
 .burger-header {
   width: 100%;
-  height: 80px;
+  height: 60px;
   background-color: #1b1b1b;
 }
 
@@ -416,10 +418,11 @@ section {
   grid-area: your-teacher-text-block;
   font-size: 25px;
   line-height: 140%;
-  width: 95.8%;
-  height: 100%;
-  display: grid;
-  align-items: stretch;
+  width: 94%;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .p-text a {
@@ -521,7 +524,7 @@ li.slick-active button {
 
 .center-text-p a {
   color: #00aff0;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*  */
@@ -593,7 +596,7 @@ li.slick-active button {
   line-height: 140%;
   letter-spacing: -0.02em;
   width: 83.4%;
-  min-height: 378px;
+  height: 378px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -819,7 +822,7 @@ li.slick-active button {
 
 .adventages-crown-block {
   grid-area: adventages-crown-block;
-  width: 92.6%;
+  width: 100%;
 }
 
 .adventages-crown-img {
@@ -1140,7 +1143,6 @@ li.slick-active button {
 .lvl-radio-btn {
   width: 26%;
   display: inline-block;
-  margin: 0 5px 0 0;
   position: relative;
 }
 .lvl-radio-btn input[type="radio"] {
@@ -1255,7 +1257,7 @@ li.slick-active button {
 .contacts-adress {
   font-size: 25px;
   line-height: 140%;
-  text-decoration-line: underline;
+  text-decoration-line: none;
   color: #00aff0;
 }
 
@@ -1348,6 +1350,9 @@ section:last-child {
 .page-nav-ul li {
   display: flex;
   align-items: center;
+  width: 27px;
+  height: 27px;
+  justify-content: center;
 }
 .page-nav-ul li:hover .page-nav-p {
   display: block;
@@ -1400,6 +1405,7 @@ section:last-child {
   }
 
   .header-hr {
+    margin-top: 20px;
     transform: translate(200%, 0px);
     opacity: 0;
     transition: all 1s ease 0s;
@@ -1488,7 +1494,7 @@ section:last-child {
     height: 445px;
   }
   .center-hr {
-    width: 31.7%;
+    width: 33%;
   }
 
   .about-webcam-img-block {
@@ -1510,6 +1516,9 @@ section:last-child {
   .about-slider__item {
     width: 910px;
   }
+  .about-studio-text {
+    height: 490px;
+  }
   .who-we-search-list {
     display: flex;
     flex-direction: column;
@@ -1523,6 +1532,9 @@ section:last-child {
   }
   .who-we-search-number {
     width: 132px;
+  }
+  .section-header-description:nth-child(6) {
+    width: 450px;
   }
   .pluses-webcam-krown {
     display: none;
@@ -1540,7 +1552,7 @@ section:last-child {
   .adventages-work {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 670px 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "adventages-crown-block calculator-earn calculator-earn"
@@ -1609,6 +1621,10 @@ section:last-child {
   }
   .vertical-lines {
     width: 737px;
+  }
+  .header-hr {
+    margin-top: 20px;
+    box-sizing: border-box;
   }
   .header-back {
     background-color: #1b1b1b;
@@ -1692,13 +1708,13 @@ section:last-child {
     line-height: 50px;
   }
   .photo-carusel-list {
-    width: 200px;
+    width: 225px;
     height: 418px;
     text-align: center;
   }
   .kate-photo {
     position: relative;
-    width: 130%;
+    width: 120%;
     height: 368px;
     overflow: hidden;
     text-align: center;
@@ -1714,6 +1730,10 @@ section:last-child {
   .your-teacher-text-block {
     font-size: 22px;
     line-height: 140%;
+    height: 918px;
+  }
+  .medal {
+    width: 225px;
   }
   .medal-img {
     width: 146px;
@@ -1731,7 +1751,7 @@ section:last-child {
     font-size: 22px;
     line-height: 140%;
     width: 100%;
-    min-height: 392px;
+    height: 392px;
   }
   .about-slider {
     width: 737px;
@@ -1915,12 +1935,15 @@ section:last-child {
     grid-template-columns: 2fr 9fr;
   }
   .section-header-number {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 29px;
   }
   .section-header-description {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 29px;
+  }
+  .section-header-description:nth-child(6) {
+    font-size: 24px;
   }
   .delete-text {
     display: none;
@@ -1928,6 +1951,7 @@ section:last-child {
   .header-hr {
     width: 81.8%;
     margin-bottom: 40px;
+    margin-top: 8px;
   }
   .your-teacher-section {
     display: flex;
@@ -1993,7 +2017,7 @@ section:last-child {
   .about-studio-text {
     font-size: 16px;
     line-height: 140%;
-    min-height: 346px;
+    height: 346px;
   }
   .about-studio-carusel {
     margin-bottom: 40px;
@@ -2172,6 +2196,9 @@ section:last-child {
   }
   .button {
     height: 40px;
+  }
+  .lvl-radio-btn {
+    width: 130px;
   }
   .lvl-radio-btn label {
     height: 40px;

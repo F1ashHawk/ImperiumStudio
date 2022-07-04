@@ -34,10 +34,11 @@ $('.responsive').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        variableWidth: true
       }
     },
     {
@@ -85,6 +86,12 @@ document.getElementById('close-burger').addEventListener('click', function () {
   document.getElementById('burger-form-background').classList.add('burger-form-background-close')
 })
 
+var sectionList = document.querySelectorAll('.burger-section-item')
+ for(let i = 0; i < sectionList.length; i++){
+  sectionList[i].addEventListener('click', function () {
+    document.getElementById('burger-form-background').classList.add('burger-form-background-close')
+  })
+ }
 
 
 $('input[name="calc-hour-day"],input[name="calc-day-week"],input[name="calc-earn-for"]').bind('input', calcAndShow);
@@ -161,8 +168,8 @@ nav.find('a').on('click', function(){
   id = $el.attr('href');
 
   $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height
-  }, 500);
+    scrollTop: $(id).offset().top - nav_height + 250 
+  }, );
 
   return false;
 })
