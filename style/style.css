@@ -152,11 +152,13 @@ section {
 
 .about-imperium-text {
   grid-area: about-imperium-text;
-  width: 52%;
+  width: 391px;
   font-size: 25px;
   line-height: 140%;
   display: grid;
   align-content: space-between;
+  height: 308px;
+  margin-top: 30px;
 }
 
 .about-imperium-img {
@@ -224,9 +226,10 @@ section {
 }
 
 .header-hr {
-  border: 1px solid #ffc915;
+  border: 0.6px solid #ffc915;
   color: #ffc915;
   background-color: #ffc915;
+  border-bottom: 0;
   width: 66.6%;
   margin-left: auto;
   margin-bottom: 71.5px;
@@ -486,8 +489,8 @@ li.slick-active button {
 
 .center-hr {
   background-color: #ffc915;
-  border: #ffc915 dashed 0.5px;
-
+  border: 0.5px solid #ffc915;
+  border-bottom: 0;
   color: #ffc915;
   width: 33.3%;
   margin: 0 auto;
@@ -515,11 +518,14 @@ li.slick-active button {
 }
 
 .about-webcam-text {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  height: 483px;
   width: 43.4%;
   font-size: 25px;
   line-height: 140%;
-  align-items: stretch;
+
+  justify-content: space-between;
 }
 
 .center-text-p a {
@@ -597,7 +603,7 @@ li.slick-active button {
   letter-spacing: -0.02em;
   width: 83.4%;
   height: 378px;
-  height: 100%;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -699,7 +705,9 @@ li.slick-active button {
 }
 
 .calculator-earn {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+
   background: #1b1b1b;
   border: 2px solid rgba(255, 201, 21, 0.2);
   width: 90%;
@@ -767,28 +775,29 @@ li.slick-active button {
 }
 
 .calculator-label {
-  margin-top: auto;
+  margin-top: 45px;
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   height: 23px;
 }
+.calculator-label:nth-child(1) {
+  margin-top: 50px;
+}
 
 .calculator-earn-money {
-  height: 60%;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 50px;
   line-height: 59px;
   text-align: center;
   color: #ffc915;
-  margin-top: auto;
+  margin-top: 50px;
 }
 
 .calculator-earn-text {
   width: 67%;
-  height: 65%;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -943,7 +952,7 @@ li.slick-active button {
   width: 91%;
   margin: 0 auto;
   padding: 50px 0 30px;
-  align-content: space-around;
+  align-content: space-between;
 }
 
 .start-form-h {
@@ -1015,7 +1024,7 @@ li.slick-active button {
 
 .start-form-input-text {
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: transparent;
   border: 0.5px solid #ffc915;
   text-align: center;
@@ -1042,7 +1051,7 @@ li.slick-active button {
   position: relative;
 
   width: 100%;
-  height: 30px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -1088,7 +1097,7 @@ li.slick-active button {
   line-height: 19px;
   font-size: 16px;
   text-align: center;
-  padding: 6px 4px;
+  padding: 10px 4px;
   width: 65px;
 }
 
@@ -1155,7 +1164,7 @@ li.slick-active button {
   align-items: center;
   background-color: transparent;
   border: 0.5px solid #ffc915;
-  height: 30px;
+  height: 40px;
   color: #ffc915;
   font-family: "Roboto";
   font-size: 16px;
@@ -1249,7 +1258,7 @@ li.slick-active button {
 }
 
 .contacts-items {
-  height: 110%;
+  height: 100%;
   display: grid;
   align-content: space-between;
 }
@@ -1517,7 +1526,9 @@ section:last-child {
     width: 910px;
   }
   .about-studio-text {
-    height: 490px;
+    width: 100%;
+    height: 413px;
+    font-size: 25px;
   }
   .who-we-search-list {
     display: flex;
@@ -1536,6 +1547,9 @@ section:last-child {
   .section-header-description:nth-child(6) {
     width: 450px;
   }
+  .section-5-desc {
+    width: 450px;
+  }
   .pluses-webcam-krown {
     display: none;
   }
@@ -1548,7 +1562,9 @@ section:last-child {
   .pluses-webcam-col:nth-child(3) {
     margin-left: auto;
   }
-
+  .section-6-desc {
+    width: 530px;
+  }
   .adventages-work {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1674,7 +1690,7 @@ section:last-child {
     width: 100%;
     text-align: center;
     top: 0;
-    margin: 50px 0 65px;
+    margin: 80px 0 65px;
   }
   .main-imperium-name-h1 {
     font-size: 130px;
@@ -1697,6 +1713,8 @@ section:last-child {
     width: 348px;
     font-size: 22px;
     line-height: 140%;
+    height: 268px;
+    margin: 0;
   }
 
   .section-header-description {
@@ -1744,6 +1762,7 @@ section:last-child {
     line-height: 140%;
   }
   .about-webcam-text {
+    height: 299px;
     font-size: 22px;
     line-height: 140%;
   }
@@ -1931,6 +1950,7 @@ section:last-child {
     line-height: 140%;
     height: 126px;
   }
+
   .section-header {
     grid-template-columns: 2fr 9fr;
   }
@@ -1984,7 +2004,7 @@ section:last-child {
   .your-teacher-text-block {
     margin-top: 40px;
     height: 546px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 140%;
   }
   .center-text-block {
@@ -1993,6 +2013,9 @@ section:last-child {
   .center-text-p {
     font-size: 19px;
     line-height: 140%;
+  }
+  .center-text-p-3 {
+    font-size: 20px;
   }
   .center-hr {
     width: 66.6%;
@@ -2065,9 +2088,12 @@ section:last-child {
     margin-left: 0;
   }
   .calculator-earn {
-    width: 72.5%;
+    width: 320px;
     height: 570px;
     margin-left: 80px;
+  }
+  .calculator-label:nth-child(1) {
+    margin-top: 42px;
   }
   .calculator-button-item label {
     height: 50px;
@@ -2081,13 +2107,18 @@ section:last-child {
     padding-top: 15px;
   }
   .calculator-label {
+    margin-top: 34px;
+    margin-bottom: 16px;
     font-size: 18px;
     line-height: 21px;
   }
   .calculator-earn-text {
     font-size: 14px;
     line-height: 140%;
-    padding-top: 26px;
+    margin-bottom: 39px;
+  }
+  .section-5-desc {
+    width: 360px;
   }
   .adventages-text-list {
     display: grid;
@@ -2217,6 +2248,12 @@ section:last-child {
     font-size: 16px;
     line-height: 140%;
   }
+  .contacts-items {
+    height: 100%;
+  }
+  .index-footer {
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2231,7 +2268,7 @@ section:last-child {
   }
   .main-imperium-name {
     height: 128px;
-    margin: 50px 0;
+    margin: 60px 0 24px;
   }
   .main-imperium-name-h1 {
     font-size: 82px;
@@ -2251,6 +2288,18 @@ section:last-child {
     margin-right: 17px;
     margin-left: 0;
   }
+  .about-studio-carusel {
+    margin-bottom: 20px;
+  }
+  .center-text-p-3 {
+    font-size: 17px;
+  }
+  .pluses-webcam-text {
+    margin-left: 40px;
+  }
+  .pluses-webcam-text-one {
+    width: 210px;
+  }
   .section-header-description {
     font-size: 24px;
   }
@@ -2260,8 +2309,14 @@ section:last-child {
   .photo-carusel-list {
     height: 280px;
   }
+  .contacts-adress {
+    width: 190px;
+  }
   .slick-slide {
     width: 201px;
+  }
+  .social-network-link {
+    width: 19px;
   }
   .kate-photo {
     width: 201px;
@@ -2270,7 +2325,9 @@ section:last-child {
   .your-teacher-text-block {
     height: 744px;
   }
-
+  .adventages-text-block {
+    margin-top: 40px;
+  }
   .medal-img {
     width: 160px;
     height: 160px;
@@ -2359,6 +2416,10 @@ section:last-child {
   }
   .lvl-radio-btn label {
     height: 40px;
+    width: 93px;
+  }
+  .lvl-radio-btn {
+    width: 93px;
   }
   .start-form-send-block {
     width: 100%;
@@ -2373,5 +2434,10 @@ section:last-child {
   .start-form-privacy {
     font-size: 16px;
     line-height: 140%;
+  }
+  .container-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 }
