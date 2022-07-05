@@ -148,6 +148,9 @@ section {
   grid-area: about-imperium-img-div;
   margin-left: -293px;
   overflow: hidden;
+  width: 839px;
+  height: 603px;
+  object-fit: cover;
 }
 
 .about-imperium-text {
@@ -162,8 +165,8 @@ section {
 }
 
 .about-imperium-img {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 
 .main-imperium-name-h1 {
@@ -505,15 +508,15 @@ li.slick-active button {
 }
 .center-text-p-1 {
   width: 835px;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 .center-text-p-3 {
   width: 975px;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 .center-text-p-4 {
   width: 941px;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 /*  */
@@ -1451,6 +1454,7 @@ section:last-child {
   .about-imperium-img {
     height: 100%;
     object-fit: cover;
+    object-position: 573% 0;
   }
   .section-header-number {
     transform: translate(0px, 120%);
@@ -1477,6 +1481,7 @@ section:last-child {
     transform: translate(200%, 0px);
     opacity: 0;
     transition: all 1s ease 0s;
+    margin-top: 20px;
   }
 
   .header-hr.anim-active {
@@ -1516,15 +1521,15 @@ section:last-child {
   }
   .center-text-p-1 {
     width: 804px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .center-text-p-3 {
     width: 910px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .center-text-p-4 {
     width: 910px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .about-webcam-img-block {
     display: none;
@@ -1729,8 +1734,12 @@ section:last-child {
     width: 358px;
     margin-left: 0;
     order: 1;
+    height: 260px;
   }
   .about-imperium-img {
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 0;
   }
   .about-imperium-text {
     width: 348px;
@@ -1786,15 +1795,15 @@ section:last-child {
   }
   .center-text-p-1 {
     width: 630px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .center-text-p-3 {
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .center-text-p-4 {
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
   .about-webcam-text {
     height: 299px;
@@ -2043,7 +2052,7 @@ section:last-child {
   .your-teacher-text-block {
     margin-top: 40px;
     height: 546px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 140%;
   }
   .center-text-block {
@@ -2052,13 +2061,14 @@ section:last-child {
   .center-text-p {
     font-size: 19px;
     line-height: 140%;
+    margin: 5px auto;
   }
   .center-text-p-3 {
     font-size: 20px;
   }
   .center-text-p-1 {
     width: 100%;
-    margin: 0 auto;
+    margin: 5px auto;
   }
   .center-hr {
     width: 66.6%;
