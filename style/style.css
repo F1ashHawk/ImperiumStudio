@@ -503,6 +503,18 @@ li.slick-active button {
   color: #ffc915;
   margin: 15px 0px 15px 0px;
 }
+.center-text-p-1 {
+  width: 835px;
+  margin: 0 auto;
+}
+.center-text-p-3 {
+  width: 975px;
+  margin: 0 auto;
+}
+.center-text-p-4 {
+  width: 941px;
+  margin: 0 auto;
+}
 
 /*  */
 /* Секция 2 */
@@ -633,7 +645,7 @@ li.slick-active button {
   text-align: center;
   color: #ffc915;
   opacity: 0.2;
-  border-right: 1px solid #ffc915;
+  border-right: 2px solid #ffc915;
   padding-right: 9px;
   align-self: stretch;
 }
@@ -1128,9 +1140,6 @@ li.slick-active button {
   border: 1px solid #ffc915;
 }
 
-.start-form-lvl {
-}
-
 .lvl-btn-list {
   display: flex;
   justify-content: space-between;
@@ -1505,7 +1514,18 @@ section:last-child {
   .center-hr {
     width: 33%;
   }
-
+  .center-text-p-1 {
+    width: 804px;
+    margin: 0 auto;
+  }
+  .center-text-p-3 {
+    width: 910px;
+    margin: 0 auto;
+  }
+  .center-text-p-4 {
+    width: 910px;
+    margin: 0 auto;
+  }
   .about-webcam-img-block {
     display: none;
   }
@@ -1542,7 +1562,7 @@ section:last-child {
     justify-content: center;
   }
   .who-we-search-number {
-    width: 132px;
+    width: 101px;
   }
   .section-header-description:nth-child(6) {
     width: 450px;
@@ -1557,7 +1577,7 @@ section:last-child {
     grid-template-columns: 3fr 5fr 5fr;
   }
   .pluses-webcam-col {
-    width: 82.5%;
+    width: 86.5%;
   }
   .pluses-webcam-col:nth-child(3) {
     margin-left: auto;
@@ -1669,6 +1689,9 @@ section:last-child {
     width: 90%;
     height: 60%;
   }
+  .section-6-desc {
+    width: 452px;
+  }
 
   .header-index-right-block {
     display: flex;
@@ -1761,6 +1784,18 @@ section:last-child {
     font-size: 28px;
     line-height: 140%;
   }
+  .center-text-p-1 {
+    width: 630px;
+    margin: 0 auto;
+  }
+  .center-text-p-3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .center-text-p-4 {
+    width: 100%;
+    margin: 0 auto;
+  }
   .about-webcam-text {
     height: 299px;
     font-size: 22px;
@@ -1796,7 +1831,8 @@ section:last-child {
     padding-right: 0;
   }
   .who-we-search-item {
-    width: 52%;
+    width: 387px;
+    justify-content: flex-start;
   }
   .pluses-webcam-col:first-child {
     display: none;
@@ -1988,6 +2024,9 @@ section:last-child {
   .photo-carusel-list {
     width: 100%;
   }
+  .section-6-desc {
+    width: 100%;
+  }
   .kate-photo {
     width: 310px;
     height: 430px;
@@ -2016,6 +2055,10 @@ section:last-child {
   }
   .center-text-p-3 {
     font-size: 20px;
+  }
+  .center-text-p-1 {
+    width: 100%;
+    margin: 0 auto;
   }
   .center-hr {
     width: 66.6%;
@@ -2312,6 +2355,21 @@ section:last-child {
   .contacts-adress {
     width: 190px;
   }
+  .start-form-lvl {
+    margin-top: 40px;
+  }
+  .lvl-btn-list {
+    margin-top: 10px;
+  }
+  .start-form-header-sec {
+    margin-top: 60px;
+  }
+  .start-form-send-block {
+    margin-top: 60px;
+  }
+  .start-form-privacy {
+    margin-top: 10px;
+  }
   .slick-slide {
     width: 201px;
   }
@@ -2331,6 +2389,9 @@ section:last-child {
   .medal-img {
     width: 160px;
     height: 160px;
+  }
+  .section-6-desc {
+    width: 202px;
   }
   .about-webcam-text {
     height: 390px;
@@ -2388,6 +2449,7 @@ section:last-child {
   .start-form-data-list {
     flex-wrap: wrap;
     height: auto;
+    margin-top: 20px;
   }
   .start-form-data-item {
     width: 45%;
