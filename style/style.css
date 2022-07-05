@@ -54,29 +54,44 @@ section {
   padding: 0;
   overflow: hidden;
 }
-
+.container-lines {
+  margin: 0 auto;
+  width: 1268px;
+  display: flex;
+  justify-content: space-between;
+}
 .vertical-lines {
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1260px;
+  width: 1268px;
   z-index: -1;
 }
 .line {
   width: 100%;
   position: relative;
+  box-sizing: content-box;
+}
+.line:nth-child(1):before {
+  border-left: 2px solid #e0e0e0;
+  border-right: 0.75px solid #e0e0e0;
 }
 .line:nth-child(2):before {
-  border: 0;
+  width: 99.5%;
+  border-left: 0.75px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+}
+.line:nth-child(3):before {
+  border-right: 2px solid #e0e0e0;
 }
 .line::before {
   content: "";
   display: block;
-  width: 100%;
-  border-right: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
+  max-width: 100%;
+
   opacity: 0.2;
   height: 2000px;
+  box-sizing: border-box;
 }
 
 /* ШАПКА */
@@ -1446,8 +1461,12 @@ section:last-child {
   .container {
     width: 910px;
   }
+  .container-lines {
+    width: 918px;
+  }
+
   .vertical-lines {
-    width: 910px;
+    width: 918px;
   }
   .about-imperium-text {
     width: 54%;
@@ -1661,8 +1680,14 @@ section:last-child {
   .container {
     width: 737px;
   }
+  .container-lines {
+    width: 744px;
+  }
   .vertical-lines {
-    width: 737px;
+    width: 744px;
+  }
+  .line:nth-child(2):before {
+    width: 100%;
   }
   .header-hr {
     margin-top: 20px;
@@ -1928,15 +1953,21 @@ section:last-child {
     width: 440px;
   }
   .vertical-lines {
-    width: 440px;
+    width: 445px;
+  }
+  .container-lines {
+    width: 445px;
   }
   .line:nth-child(1)::before {
     border-right: 0;
   }
+  .line:nth-child(2)::before {
+    border-right: 0;
+    border-left: 0;
+  }
   .line:nth-child(3)::before {
     border-left: 0;
   }
-
   .header-index {
     width: 440px;
     height: 45px;
@@ -2316,7 +2347,10 @@ section:last-child {
     width: 320px;
   }
   .vertical-lines {
-    width: 320px;
+    width: 326px;
+  }
+  .container-lines {
+    width: 326px;
   }
   .header-index {
     width: 320px;
