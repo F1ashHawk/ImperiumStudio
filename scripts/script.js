@@ -86,19 +86,7 @@ document.getElementById('close-burger').addEventListener('click', function () {
   document.getElementById('burger-form-background').classList.add('burger-form-background-close')
 })
 
-var sectionList = document.querySelectorAll('.burger-section-item')
- for(let i = 0; i < sectionList.length; i++){
-  sectionList[i].addEventListener('click', function () {
-    document.getElementById('burger-form-background').classList.add('burger-form-background-close')
-  })
- }
 
- var sectionList = document.querySelectorAll('.burger-nav-menu-li')
- for(let i = 0; i < sectionList.length; i++){
-  sectionList[i].addEventListener('click', function () {
-    document.getElementById('burger-form-background').classList.add('burger-form-background-close')
-  })
- }
 
 
 $('input[name="calc-hour-day"],input[name="calc-day-week"],input[name="calc-earn-for"]').bind('input', calcAndShow);
@@ -135,8 +123,6 @@ if (animItems.length > 0) {
       }
     }
   }
-
-
   function offset(el) {
     const rect = el.getBoundingClientRect(),
       scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -145,16 +131,20 @@ if (animItems.length > 0) {
   }
 }
 
+
+
 var sections = $('section'),
 nav = $('.page-nav-ul'),
 burger = $('.burger-nav-menu-ul')
+burger_section= $('.burger-section-list')
+burger_height = burger.outerHeight();
 nav_height = nav.outerHeight();
 
 $(window).on('scroll', function(){
   var cur_pos = $(this).scrollTop();
 
   sections.each(function(){
-    var top =$(this).offset().top - nav_height,
+    var top =$(this).offset().top - nav_height -200,
     bottom = top +$(this).outerHeight();
 
     if(cur_pos >= top && cur_pos <= bottom) {
@@ -175,8 +165,29 @@ nav.find('a').on('click', function(){
   id = $el.attr('href');
 
   $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height + 270 
+    scrollTop: $(id).offset().top - nav_height + 350 
   }, );
 
   return false;
+})
+
+burger.find('a').on('click', function(){
+  var $el = $(this),
+  id = $el.attr('href');
+  document.getElementById('burger-form-background').classList.add('burger-form-background-close')
+  $('html, body').animate({
+    scrollTop: $(id).offset().top - burger_height +300
+  }, );
+  return false;
+})
+
+burger_section.find('a').on('click', function(){
+  var $el = $(this),
+  id = $el.attr('href');
+  document.getElementById('burger-form-background').classList.add('burger-form-background-close')
+  $('html, body').animate({
+    scrollTop: $(id).offset().top - burger_height + 300
+  }, );
+  return false;
+  
 })
