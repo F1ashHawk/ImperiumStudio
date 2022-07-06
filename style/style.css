@@ -135,6 +135,7 @@ section {
 }
 
 .header-networks {
+  margin-left: 2px;
   display: flex;
   width: 96px;
   justify-content: space-between;
@@ -511,7 +512,7 @@ li.slick-active button {
   border: 0.5px solid #ffc915;
   border-bottom: 0;
   color: #ffc915;
-  width: 33.3%;
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -1632,6 +1633,7 @@ section:last-child {
   .calculator-earn {
     width: 62%;
     grid-area: calculator-earn;
+    margin-left: 1px;
   }
   .adventages-text-block {
     margin-top: 60px;
@@ -1889,6 +1891,7 @@ section:last-child {
   }
   .calculator-earn {
     width: 76.5%;
+    margin-left: 1px;
   }
   #calculator-earn-for div label {
     font-size: 18px;
@@ -1949,14 +1952,17 @@ section:last-child {
   section {
     margin-bottom: 70px;
   }
+  section:last-child {
+    margin-bottom: 40px;
+  }
   .container {
     width: 440px;
   }
   .vertical-lines {
-    width: 445px;
+    width: 446px;
   }
   .container-lines {
-    width: 445px;
+    width: 446px;
   }
   .line:nth-child(1)::before {
     border-right: 0;
@@ -2160,8 +2166,12 @@ section:last-child {
   .pluses-webcam-item {
     margin-bottom: 40px;
   }
+  .pluses-webcam-col {
+    margin: 0 40px 0 80px;
+  }
   .pluses-webcam-col:nth-child(3) {
     padding-top: 40px;
+    margin: 0 40px 0 80px;
   }
   .adventages-crown-block {
     display: none;
@@ -2177,6 +2187,10 @@ section:last-child {
     width: 320px;
     height: 570px;
     margin-left: 80px;
+  }
+  .contacts-logo {
+    width: 120px;
+    height: 100px;
   }
   .calculator-label:nth-child(1) {
     margin-top: 42px;
@@ -2259,6 +2273,7 @@ section:last-child {
   }
 
   .contacts-adress {
+    width: 70%;
     font-size: 16px;
     line-height: 140%;
   }
@@ -2393,8 +2408,9 @@ section:last-child {
     font-size: 24px;
   }
   .header-hr {
-    width: 88%;
+    width: 86%;
   }
+
   .photo-carusel-list {
     height: 280px;
   }
@@ -2403,6 +2419,9 @@ section:last-child {
   }
   .contacts-adress {
     width: 190px;
+  }
+  .contacts-items {
+    height: 93%;
   }
   .start-form-lvl {
     margin-top: 40px;
@@ -2459,6 +2478,7 @@ section:last-child {
   }
   .pluses-webcam-col {
     width: 100%;
+    margin: 0;
   }
   .calculator-earn {
     width: 100%;
