@@ -1,0 +1,108 @@
+@media screen and (min-width: 1260px) {
+    .your-teacher-text-block{
+        height: 757px;
+    }
+    .about-studio-text{
+        height: 290px;
+    }
+    .center-text-p-4{
+        width: 550px;
+    }
+    .start-form-data-list{
+        height: 89px;
+    }
+    .start-form-data-list-sec{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .about-imperium-text{
+        height: 300px;
+        margin-top: 43px;
+    }
+    .your-teacher-text-block{
+        height: 90%;
+    }
+    .about-webcam-text{
+        height: 330px;
+    }
+    .about-studio-text {
+    height: 335px;
+    }
+    .center-text-p-4{
+        width: 500px;
+    }
+    .start-form-data-list{
+        height: 89px;
+    }
+    .start-form-data-list-sec{
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .about-imperium-text{
+        height: 272px;
+        margin-top: -4px;
+    }
+    .your-teacher-text-block{
+        height: 100%;
+    }
+    .about-studio-text{
+        height: 330px;
+    }
+    .section-6-desc{
+        width: 310px;
+    }
+    .adventages-work{
+    grid-template-rows: 2fr 8fr ;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-imperium-text {
+    height: 170px;
+    margin-top: 40px;
+    }
+    .your-teacher-text-block{
+        height: 546px;
+    }
+    .about-webcam-text{
+        height: 248px;
+    }
+    .about-studio-text{
+        height: 255px;
+    }
+    .adventages-text-list{
+        height: 2150px;
+    }
+    .center-text-p-4{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .about-imperium-text {
+    height: 160px;
+    }
+    .your-teacher-text-block{
+        height: 670px;
+    }
+    .about-webcam-text{
+        height: 335px;
+    }
+    .about-studio-text{
+        height: 330px;
+    }
+    .adventages-text-list{
+        height: 2300px;
+    }
+    
+    .start-form-data-list{
+        height: auto;
+    }
+    .start-form-data-list:nth-child(2) .start-form-data-item:nth-child(3){
+        height: 92px;
+    }
+}
