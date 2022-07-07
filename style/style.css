@@ -46,6 +46,7 @@ section {
   margin-bottom: 150px;
 }
 
+
 /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
 /* стилевой класс, который управляет шириной контейнера сетки*/
 
@@ -73,16 +74,16 @@ section {
   box-sizing: content-box;
 }
 .line:nth-child(1):before {
-  border-left: 2px solid #e0e0e0;
-  border-right: 0.75px solid #e0e0e0;
+  border-left: 2px solid #1D1D1D;
+  border-right: 0.75px solid #1D1D1D;
 }
 .line:nth-child(2):before {
   width: 99.5%;
-  border-left: 0.75px solid #e0e0e0;
-  border-right: 2px solid #e0e0e0;
+  border-left: 0.75px solid #1D1D1D;
+  border-right: 2px solid #1D1D1D;
 }
 .line:nth-child(3):before {
-  border-right: 2px solid #e0e0e0;
+  border-right: 2px solid #1D1D1D;
 }
 .line::before {
   content: "";
@@ -1120,7 +1121,7 @@ li.slick-active button {
 
 #button-17 .knobs:before,
 #button-17 .knobs span {
-  content: "Yes";
+  content: "Да";
   position: absolute;
   top: 0;
   left: 0;
@@ -1148,7 +1149,7 @@ li.slick-active button {
 }
 
 #button-17 .checkbox:checked + .knobs:before {
-  content: "No";
+  content: "Нет";
   left: 65px;
 }
 
@@ -1416,6 +1417,9 @@ section:last-child {
   background-image: url(../images/icons/ellipse-burger-hover.svg);
   width: 27px;
   height: 27px;
+}
+.error{
+  border-color: #FF0000;
 }
 @media screen and (min-width: 1260px) {
   .container {
@@ -2273,6 +2277,14 @@ section:last-child {
   }
   #video {
     height: 250px;
+    width: 100%;
+    
+  }
+  #myVideo{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 1px;
   }
 
   .contacts-adress {
@@ -2495,6 +2507,12 @@ section:last-child {
   }
   #video {
     height: 183px;
+    width: 320px;
+  }
+
+  #myVideo{
+    height: 100%;
+    margin: 0;
   }
   .burger-section-container {
     width: 326px;

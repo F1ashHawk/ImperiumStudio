@@ -191,3 +191,91 @@ burger_section.find('a').on('click', function(){
   return false;
   
 })
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  const form = document.getElementById('form-start');
+  form.addEventListener('submit', formSend);
+  async function formSend(e){
+    e.preventDefault();
+    
+    let error = formValidate(form);
+
+    let formData = new FormData(form);
+
+    if (error === 0) {
+      let responce = await fetch('sendmail.php', {
+        method: 'POST',
+        body: formData
+      });
+      if(responce.ok){
+        let result = await responce.json();
+        alert(result.message);
+        form.reset();
+      }else{
+        alert('Ошибка при отправке')
+      }
+    }
+    else {
+      alert('Заполните обязательные поля');
+    }
+  }
+
+  function formValidate(e) {
+    let error = 0;
+    let formReq = document.querySelectorAll('.req');
+
+    for (let i=0; i<formReq.length; i++){
+      const input = formReq[i];
+      formRemoveError(input);
+
+      if (input.classList.contains('_phone-number')){
+        if (numberTest(input)){
+          formAddError(input);
+          error++;
+        }
+      }
+      else if(input.classList.contains('contact-network')){
+        if (contactTest()){
+          formAddError(input);
+          error++;
+        }
+      }
+      else {
+        if (input.value === ''){
+          formAddError(input);
+          error++;
+        }
+      }
+
+    }
+    return error
+  }
+
+  function formAddError(input){
+    input.parentElement.classList.add('error');
+    input.classList.add('error');
+  }
+  function formRemoveError(input){
+    input.parentElement.classList.remove('error');
+    input.classList.remove('error');
+  }
+  function numberTest(input){
+    return !/^[\d\+][\d\(\)\ -]{4,14}\d$/.test(input.value);
+  }
+  function contactTest(){
+    contactInput = document.querySelectorAll('.contact-network');
+    er = 0;
+    for (let i =0; i<contactInput.length; i++){
+      if (contactInput[i].value === ''){
+        er++;
+      }
+    }
+    if (er == 2){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+})
