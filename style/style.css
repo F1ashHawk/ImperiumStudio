@@ -74,16 +74,16 @@ section {
   box-sizing: content-box;
 }
 .line:nth-child(1):before {
-  border-left: 2px solid #1D1D1D;
-  border-right: 0.75px solid #1D1D1D;
+  border-left: 2px solid #2B2B2B;
+  border-right: 0.75px solid #2B2B2B;
 }
 .line:nth-child(2):before {
   width: 99.5%;
-  border-left: 0.75px solid #1D1D1D;
-  border-right: 2px solid #1D1D1D;
+  border-left: 0.75px solid #2B2B2B;
+  border-right: 2px solid #2B2B2B;
 }
 .line:nth-child(3):before {
-  border-right: 2px solid #1D1D1D;
+  border-right: 2px solid #2B2B2B;
 }
 .line::before {
   content: "";
@@ -1125,7 +1125,7 @@ li.slick-active button {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 102%;
   color: #000000;
   line-height: 19px;
   font-size: 16px;
