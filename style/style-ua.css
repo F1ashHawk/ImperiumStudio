@@ -1,3 +1,6 @@
+.about-imperium-item{
+    align-self: auto;
+}
 @media screen and (min-width: 1260px) {
     .about-imperium-text{
         display: flex;
@@ -41,7 +44,9 @@
     .start-form-privacy{
         margin-top: 10px;
     }
-    
+    .center-text-p-4 {
+    width: 640px;
+    }
 }
 
 @media screen and (max-width: 1260px) {
@@ -94,6 +99,9 @@
     .start-form-privacy{
         margin-top: 10px;
     }
+    .section-6-desc{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -123,7 +131,7 @@
         justify-content: flex-start;
     }
     .section-6-desc{
-        width: 310px;
+        width: 100%;
     }
     .adventages-work{
     grid-template-rows: 2fr 8fr ;
@@ -145,6 +153,9 @@
     }
     #calculator-earn-for .calculator-button-item label{
         font-size: 15px;
+    }
+    .center-text-p-4{
+        width: 515px;
     }
 }
 

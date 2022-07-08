@@ -308,7 +308,7 @@ input::-webkit-inner-spin-button {
   height: 700px;
 }
 .burger-header-container {
-  width: 97%;
+  width: 737px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -2012,6 +2012,9 @@ section:last-child {
   section:last-child {
     margin-bottom: 40px;
   }
+  .burger-header-container{
+    width: 440px;
+  }
   .container {
     width: 440px;
   }
@@ -2432,6 +2435,9 @@ section:last-child {
 
 @media screen and (max-width: 479px) {
   .container {
+    width: 320px;
+  }
+  .burger-header-container{
     width: 320px;
   }
   .vertical-lines {
