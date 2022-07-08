@@ -2287,14 +2287,18 @@ section:last-child {
   .section-5-desc {
     width: 360px;
   }
+  .adventages-text-block{
+    margin-top: 0;
+  }
   .adventages-text-list {
-    display: grid;
-    align-content: space-between;
-    height: 2478px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
   .adventages-text-item {
     width: 358px;
     margin-left: auto;
+    margin-top: 40px;
   }
   .adventages-text-h {
     font-size: 24px;
@@ -2533,9 +2537,6 @@ section:last-child {
   .pluses-webcam-col:nth-child(3) {
     margin: 0;
   }
-  .adventages-text-block {
-    margin-top: 40px;
-  }
   .medal-img {
     width: 160px;
     height: 160px;
@@ -2565,9 +2566,6 @@ section:last-child {
   .calculator-earn {
     width: 100%;
     margin-left: 0;
-  }
-  .adventages-text-list {
-    height: 2588px;
   }
   #video {
     height: 183px;

@@ -146,9 +146,6 @@
     .about-studio-text{
         height: auto;
     }
-    .adventages-text-list{
-        height: 2150px;
-    }
     .center-text-p-4{
         width: 350px;
     }
@@ -164,6 +161,9 @@
     .about-studio-text {
         height: auto;
         justify-content: flex-start;
+    }
+    .adventages-text-list{
+        height: auto;
     }
 }
 
@@ -181,9 +181,6 @@
     }
     .about-studio-text{
         height: auto;
-    }
-    .adventages-text-list{
-        height: 2300px;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'No';

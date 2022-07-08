@@ -176,11 +176,8 @@
     .about-studio-text{
         height: auto;
     }
-    .adventages-text-list{
-        height: 2150px;
-    }
     .center-text-p-4{
-        width: 260px;
+        width: 300px;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'Ні';
@@ -208,9 +205,6 @@
     }
     .about-studio-text{
         height: auto;
-    }
-    .adventages-text-list{
-        height: 2300px;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'Ні';
