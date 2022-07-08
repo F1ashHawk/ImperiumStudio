@@ -1,9 +1,216 @@
-@media screen and (min-width: 1260px) {}
+@media screen and (min-width: 1260px) {
+    .about-imperium-text{
+        display: flex;
+        flex-direction: column;  
+        justify-content: flex-end;
+    }
+    .about-imperium-item:not(:first-child){
+        margin-top: 14px;
+        align-self: stretch;
+    }
+    .your-teacher-text-block{
+        justify-content: flex-start;
+    }
+    .p-text:not(:first-child){
+        margin-top: 16px;
+    }
+    .about-webcam-text{
+        justify-content: flex-start;
+    }
+    .about-studio-text{
+        justify-content: flex-start;
+    }
+    .center-text-p-4{
+        width: 550px;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'Ні';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Так";
+    }
+    #calculator-earn-for .calculator-button-item label{
+        font-size: 18px;
+    }
+    .start-form-h4 {
+    font-size: 19px;
+    }
+    .start-form-send-block{
+        height: auto;
+    }
+    .start-form-privacy{
+        margin-top: 10px;
+    }
+    
+}
 
-@media screen and (max-width: 1260px) {}
+@media screen and (max-width: 1260px) {
+    .about-imperium-text{
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+        justify-content: flex-end;
+    }
+    .about-imperium-item:not(:first-child){
+        margin-top: 14px;
+        align-self: stretch;
+    }
+    .your-teacher-section{
+        grid-template-rows: 496px auto;
+    }
+    .your-teacher-text-block{
+        height: auto;
+        justify-content: flex-start;
+    }
+    .about-webcam-text{
+        justify-content: flex-start;
+        height: auto;
+    }
+    .about-studio-text {
+        height: auto;
+        justify-content: flex-start;
+    }
+    .p-text:not(:first-child){
+        margin-top: 14px;
+    }
+    .center-text-p-4{
+        width: 500px;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'Ні';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Так";
+    }
+    #calculator-earn-for .calculator-button-item label{
+        font-size: 18px;
+    }
+    .start-form-h4 {
+        font-size: 19px;
+    }
+    .start-form-send-block{
+        height: auto;
+    }
+    .start-form-privacy{
+        margin-top: 10px;
+    }
+}
 
-@media screen and (max-width: 999px) {}
+@media screen and (max-width: 999px) {
+    .about-imperium-text{
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-between;
+        margin-top: -4px;
+    }
+    .your-teacher-section{
+        grid-template-rows: 424px auto;
+    }
+    .p-text:not(:first-child){
+        margin-top: 10px;
+    }
+    .your-teacher-text-block{
+        height: auto;
+        justify-content: flex-start;
+    }
+    .about-webcam-text{
+        justify-content: flex-start;
+        height: auto;
+    }
+    .about-studio-text{
+        height: auto;
+        justify-content: flex-start;
+    }
+    .section-6-desc{
+        width: 310px;
+    }
+    .adventages-work{
+    grid-template-rows: 2fr 8fr ;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'Ні';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Так";
+    }
+    .start-form-h4 {
+        font-size: 19px;
+    }
+    .start-form-send-block{
+        height: auto;
+    }
+    .start-form-privacy{
+        margin-top: 10px;
+    }
+    #calculator-earn-for .calculator-button-item label{
+        font-size: 15px;
+    }
+}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .about-imperium-text {
+    height: auto;
+    margin-top: 40px;
+    }
+    .your-teacher-section{
+        margin-top: 8px;
+    }
+    .your-teacher-text-block{
+        height: auto;
+    }
+    .about-webcam-text{
+        height: auto;
+    }
+    .about-studio-text{
+        height: auto;
+    }
+    .adventages-text-list{
+        height: 2150px;
+    }
+    .center-text-p-4{
+        width: 260px;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'Ні';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Так";
+    }
+    .start-form-h4 {
+        font-size: 19px;
+    }
+    #calculator-earn-for .calculator-button-item label{
+        font-size: 15px;
+    }
+}
 
-@media screen and (max-width: 479px) {}
+@media screen and (max-width: 479px) {
+    .about-imperium-text {
+    height: auto;
+    }
+    .your-teacher-text-block{
+        height: auto;
+    }
+    .about-webcam-text{
+        height: auto;
+    }
+    .about-studio-text{
+        height: auto;
+    }
+    .adventages-text-list{
+        height: 2300px;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'Ні';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Так";
+    }
+    .start-form-h4 {
+        font-size: 19px;
+    }
+    #calculator-earn-for .calculator-button-item label{
+        font-size: 15px;
+    }
+}

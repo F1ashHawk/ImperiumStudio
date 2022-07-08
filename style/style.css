@@ -144,7 +144,10 @@ input::-webkit-inner-spin-button {
   color: #e0e0e0;
 }
 .header-languages-btn a:hover{
-  text-decoration: underline;
+  border-bottom: 1px solid #e0e0e0
+}
+.header-languages-btn .header-languages-btn-active:hover{
+  border-bottom: 1px solid #ffc915
 }
 
 .header-languages-btn .header-languages-btn-active{
@@ -422,6 +425,7 @@ input::-webkit-inner-spin-button {
 
 .burger-languages{
   display: flex;
+  margin-right: 8px;
 }
 .burger-languages-btn:not(:first-child){
   margin-left: 30px;
@@ -675,9 +679,9 @@ li.slick-active button {
   font-size: 25px;
   line-height: 140%;
   letter-spacing: -0.02em;
-  width: 83.4%;
+  width: 1066px;
   height: 378px;
-
+  padding-right: 42px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1621,6 +1625,7 @@ section:last-child {
     width: 100%;
     height: 413px;
     font-size: 25px;
+    padding: 0;
   }
   .who-we-search-list {
     display: flex;

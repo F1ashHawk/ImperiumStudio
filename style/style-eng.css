@@ -1,3 +1,7 @@
+.calculator-earn-text{
+    width: 77%;
+}
+
 @media screen and (min-width: 1260px) {
     .about-imperium-text{
         display: flex;
@@ -20,8 +24,12 @@
     .about-studio-text{
         justify-content: flex-start;
     }
+    .about-studio-text {
+        height: auto;
+        justify-content: flex-start;
+    }
     .center-text-p-4{
-        width: 550px;
+        width: 640px;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'No';
@@ -62,9 +70,17 @@
         margin-top: 14px;
     }
     .center-text-p-4{
-        width: 500px;
+        width: 550px;
     }
-    
+    .section-5-desc{
+        width: 100%;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'No';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Yes";
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -99,6 +115,16 @@
     .adventages-work{
     grid-template-rows: 2fr 8fr ;
     }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'No';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Yes";
+    }
+    .about-studio-text {
+        height: auto;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -122,7 +148,20 @@
         height: 2150px;
     }
     .center-text-p-4{
-        width: 260px;
+        width: 350px;
+    }
+    .section-6-desc{
+        width: 100%;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'No';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Yes";
+    }
+    .about-studio-text {
+        height: auto;
+        justify-content: flex-start;
     }
 }
 
@@ -141,6 +180,16 @@
     }
     .adventages-text-list{
         height: 2300px;
+    }
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'No';
+    }
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Yes";
+    }
+    .about-studio-text {
+        height: auto;
+        justify-content: flex-start;
     }
     
     
