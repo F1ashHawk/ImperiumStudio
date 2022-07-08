@@ -1,56 +1,97 @@
 @media screen and (min-width: 1260px) {
+    .about-imperium-text{
+        display: flex;
+        flex-direction: column;  
+        justify-content: flex-end;
+    }
+    .about-imperium-item:not(:first-child){
+        margin-top: 14px;
+        align-self: stretch;
+    }
     .your-teacher-text-block{
-        height: 757px;
+        justify-content: flex-start;
+    }
+    .p-text:not(:first-child){
+        margin-top: 16px;
+    }
+    .about-webcam-text{
+        justify-content: flex-start;
     }
     .about-studio-text{
-        height: 290px;
+        justify-content: flex-start;
     }
     .center-text-p-4{
         width: 550px;
     }
-    .start-form-data-list{
-        height: 89px;
+    #button-17 .checkbox:checked + .knobs:before{
+        content: 'No';
     }
-    .start-form-data-list-sec{
-        height: 70px;
+    #button-17 .knobs:before, #button-17 .knobs span{
+        content: "Yes";
     }
+    
 }
 
 @media screen and (max-width: 1260px) {
     .about-imperium-text{
-        height: 300px;
-        margin-top: 43px;
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+        justify-content: flex-end;
+    }
+    .about-imperium-item:not(:first-child){
+        margin-top: 14px;
+        align-self: stretch;
+    }
+    .your-teacher-section{
+        grid-template-rows: 496px auto;
     }
     .your-teacher-text-block{
-        height: 90%;
+        height: auto;
+        justify-content: flex-start;
     }
     .about-webcam-text{
-        height: 330px;
+        justify-content: flex-start;
+        height: auto;
     }
     .about-studio-text {
-    height: 335px;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .p-text:not(:first-child){
+        margin-top: 14px;
     }
     .center-text-p-4{
         width: 500px;
     }
-    .start-form-data-list{
-        height: 89px;
-    }
-    .start-form-data-list-sec{
-        height: 70px;
-    }
+    
 }
 
 @media screen and (max-width: 999px) {
     .about-imperium-text{
-        height: 272px;
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-between;
         margin-top: -4px;
     }
+    .your-teacher-section{
+        grid-template-rows: 424px auto;
+    }
+    .p-text:not(:first-child){
+        margin-top: 10px;
+    }
     .your-teacher-text-block{
-        height: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .about-webcam-text{
+        justify-content: flex-start;
+        height: auto;
     }
     .about-studio-text{
-        height: 330px;
+        height: auto;
+        justify-content: flex-start;
     }
     .section-6-desc{
         width: 310px;
@@ -62,17 +103,20 @@
 
 @media screen and (max-width: 767px) {
     .about-imperium-text {
-    height: 170px;
+    height: auto;
     margin-top: 40px;
     }
+    .your-teacher-section{
+        margin-top: 8px;
+    }
     .your-teacher-text-block{
-        height: 546px;
+        height: auto;
     }
     .about-webcam-text{
-        height: 248px;
+        height: auto;
     }
     .about-studio-text{
-        height: 255px;
+        height: auto;
     }
     .adventages-text-list{
         height: 2150px;
@@ -84,25 +128,20 @@
 
 @media screen and (max-width: 479px) {
     .about-imperium-text {
-    height: 160px;
+    height: auto;
     }
     .your-teacher-text-block{
-        height: 670px;
+        height: auto;
     }
     .about-webcam-text{
-        height: 335px;
+        height: auto;
     }
     .about-studio-text{
-        height: 330px;
+        height: auto;
     }
     .adventages-text-list{
         height: 2300px;
     }
     
-    .start-form-data-list{
-        height: auto;
-    }
-    .start-form-data-list:nth-child(2) .start-form-data-item:nth-child(3){
-        height: 92px;
-    }
+    
 }

@@ -235,6 +235,12 @@ document.addEventListener('DOMContentLoaded', function(){
           error++;
         }
       }
+      // else if(input.classList.contains('start-numb')){
+      //   if (oldTest(input)){
+      //     formAddError(input);
+      //     error++;
+      //   }
+      // }
       else if(input.classList.contains('contact-network')){
         if (contactTest()){
           formAddError(input);
@@ -262,6 +268,11 @@ document.addEventListener('DOMContentLoaded', function(){
   }
   function numberTest(input){
     return !/^[\d\+][\d\(\)\ -]{4,14}\d$/.test(input.value);
+  }
+  function oldTest(input){
+    if (input.value < 18){
+      return true
+    }
   }
   function contactTest(){
     contactInput = document.querySelectorAll('.contact-network');
