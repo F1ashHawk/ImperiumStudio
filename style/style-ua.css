@@ -184,7 +184,7 @@
         height: auto;
     }
     .center-text-p-4{
-        width: 300px;
+        width: 360px;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'Ні';
@@ -233,5 +233,8 @@
     }
     .section-5-desc{
         width: 200px;
+    }
+    .center-text-p-4{
+        width: 300px;
     }
 }
