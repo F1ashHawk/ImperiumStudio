@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 1260px) {
     .about-imperium-text{
-        font-size: 22px;
+        font-size: 24px;
         display: flex;
         flex-direction: column;  
         justify-content: flex-end;
@@ -16,15 +16,18 @@
     }
     .your-teacher-text-block{
         justify-content: flex-start;
+        height: auto;
     }
     .p-text:not(:first-child){
         margin-top: 16px;
     }
     .about-webcam-text{
         justify-content: flex-start;
+        height: auto;
     }
     .about-studio-text{
         justify-content: flex-start;
+        height: auto;
     }
     .about-studio-text {
         height: auto;
@@ -54,6 +57,7 @@
         display: flex;
         flex-direction: column;  
         justify-content: flex-end;
+        font-size: 23px;
     }
     .about-imperium-item:not(:first-child){
         margin-top: 14px;
@@ -78,16 +82,19 @@
         margin-top: 14px;
     }
     .center-text-p-4{
-        width: 550px;
+        width: 560px;
     }
     .section-5-desc{
-        width: 100%;
+        width: 70%;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'No';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
         content: "Yes";
+    }
+    #calculator-earn-for .calculator-button-item:nth-child(1) label{
+        padding-top: 7px;
     }
 }
 
@@ -98,6 +105,7 @@
         flex-direction: column;  
         justify-content: space-between;
         margin-top: -4px;
+        font-size: 21px;
     }
     .your-teacher-section{
         grid-template-rows: 424px auto;
@@ -153,7 +161,7 @@
         height: auto;
     }
     .adventages-text-list{
-        height: 2150px;
+        height: auto;
     }
     .center-text-p-4{
         width: 350px;
@@ -171,12 +179,19 @@
         height: auto;
         justify-content: flex-start;
     }
+    .section-5-desc{
+        width: 100%;
+    }
+    #calculator-earn-for .calculator-button-item:nth-child(1) label{
+        padding-top: 5px;
+    }
 }
 
 @media screen and (max-width: 479px) {
     .about-imperium-text {
     height: auto;
     width: 100%;
+    font-size: 19px;
     }
     .your-teacher-text-block{
         height: auto;
@@ -188,7 +203,7 @@
         height: auto;
     }
     .adventages-text-list{
-        height: 2300px;
+        height: auto;
     }
     #button-17 .checkbox:checked + .knobs:before{
         content: 'No';
@@ -199,6 +214,12 @@
     .about-studio-text {
         height: auto;
         justify-content: flex-start;
+    }
+    .center-text-p-4{
+        width: 305px;
+    }
+    .header-hr{
+        width: 280px;
     }
     
     
