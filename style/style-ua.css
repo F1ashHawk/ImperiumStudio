@@ -45,7 +45,10 @@
         margin-top: 10px;
     }
     .center-text-p-4 {
-    width: 640px;
+    width: 660px;
+    }
+    .pluses-webcam-col{
+        width: 71%;
     }
 }
 
@@ -79,8 +82,9 @@
         margin-top: 14px;
     }
     .center-text-p-4{
-        width: 500px;
+        width: 660px;
     }
+    
     #button-17 .checkbox:checked + .knobs:before{
         content: 'Ні';
     }
@@ -155,7 +159,10 @@
         font-size: 15px;
     }
     .center-text-p-4{
-        width: 515px;
+        width: 530px;
+    }
+    .section-5-desc{
+        width: 400px;
     }
 }
 
@@ -191,6 +198,12 @@
     #calculator-earn-for .calculator-button-item label{
         font-size: 15px;
     }
+    .section-5-desc{
+        width: 360px;
+    }
+    .center-text-p-3{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -217,5 +230,8 @@
     }
     #calculator-earn-for .calculator-button-item label{
         font-size: 15px;
+    }
+    .section-5-desc{
+        width: 200px;
     }
 }

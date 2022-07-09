@@ -131,8 +131,6 @@
     .about-imperium-text {
     height: auto;
     margin-top: 40px;
-    margin-left: auto;
-    width: 82%;
     }
     .your-teacher-section{
         margin-top: 8px;
@@ -171,7 +169,6 @@
     .about-imperium-text {
     height: auto;
     width: 100%;
-    margin: 0;
     }
     .your-teacher-text-block{
         height: auto;
