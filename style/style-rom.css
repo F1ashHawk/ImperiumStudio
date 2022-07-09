@@ -37,10 +37,10 @@
         width: 640px;
     }
     #button-17 .checkbox:checked + .knobs:before{
-        content: 'No';
+        content: 'Nu';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
-        content: "Yes";
+        content: "Da";
     }
     #calculator-earn-for .calculator-button-item:nth-child(1) label{
         padding-top: 7px;
@@ -87,11 +87,14 @@
     .section-5-desc{
         width: 70%;
     }
+    .section-6-desc{
+        width: 100%;
+    }
     #button-17 .checkbox:checked + .knobs:before{
-        content: 'No';
+        content: 'Nu';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
-        content: "Yes";
+        content: "Da";
     }
     #calculator-earn-for .calculator-button-item:nth-child(1) label{
         padding-top: 7px;
@@ -132,10 +135,10 @@
     grid-template-rows: 2fr 8fr ;
     }
     #button-17 .checkbox:checked + .knobs:before{
-        content: 'No';
+        content: 'Nu';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
-        content: "Yes";
+        content: "Da";
     }
     .about-studio-text {
         height: auto;
@@ -170,10 +173,10 @@
         width: 100%;
     }
     #button-17 .checkbox:checked + .knobs:before{
-        content: 'No';
+        content: 'Nu';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
-        content: "Yes";
+        content: "Da";
     }
     .about-studio-text {
         height: auto;
@@ -206,10 +209,10 @@
         height: auto;
     }
     #button-17 .checkbox:checked + .knobs:before{
-        content: 'No';
+        content: 'Nu';
     }
     #button-17 .knobs:before, #button-17 .knobs span{
-        content: "Yes";
+        content: "Da";
     }
     .about-studio-text {
         height: auto;
