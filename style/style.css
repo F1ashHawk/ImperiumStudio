@@ -135,7 +135,7 @@ input::-webkit-inner-spin-button {
 
 .header-languages {
   display: flex;
-  justify-self: flex-end;
+  justify-self: center;
 }
 .header-languages-btn:not(:first-child){
   margin-left: 30px;
@@ -424,7 +424,7 @@ input::-webkit-inner-spin-button {
 }
 
 .burger-languages{
-  display: flex;
+  display: none;
   margin-right: 8px;
 }
 .burger-languages-btn:not(:first-child){
@@ -1754,13 +1754,12 @@ section:last-child {
     border-bottom: 1px solid #ffc915;
   }
   .header-languages{
-    display: none;
   }
   .header-index {
     width: 737px;
     height: 60px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 0;
     z-index: 300000;
   }
@@ -2037,7 +2036,7 @@ section:last-child {
   .header-index {
     width: 440px;
     height: 45px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .logo-group {
     display: flex;
@@ -2451,6 +2450,7 @@ section:last-child {
     width: 326px;
   }
   .header-index {
+    grid-template-columns: 142px 105px auto;
     width: 320px;
   }
   .main-imperium-name {
