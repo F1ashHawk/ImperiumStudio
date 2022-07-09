@@ -135,7 +135,7 @@ input::-webkit-inner-spin-button {
 
 .header-languages {
   display: flex;
-  justify-self: center;
+  justify-self: flex-end;
 }
 .header-languages-btn:not(:first-child){
   margin-left: 30px;
@@ -1754,6 +1754,7 @@ section:last-child {
     border-bottom: 1px solid #ffc915;
   }
   .header-languages{
+    justify-self: center;
   }
   .header-index {
     width: 737px;

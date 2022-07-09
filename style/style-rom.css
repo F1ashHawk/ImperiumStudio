@@ -4,9 +4,11 @@
 
 @media screen and (min-width: 1260px) {
     .about-imperium-text{
+        font-size: 22px;
         display: flex;
         flex-direction: column;  
         justify-content: flex-end;
+        height: auto;
     }
     .about-imperium-item:not(:first-child){
         margin-top: 14px;
@@ -36,6 +38,12 @@
     }
     #button-17 .knobs:before, #button-17 .knobs span{
         content: "Yes";
+    }
+    #calculator-earn-for .calculator-button-item:nth-child(1) label{
+        padding-top: 7px;
+    }
+    .adventages-text-item-p{
+        letter-spacing: 0.5px;
     }
     
 }
