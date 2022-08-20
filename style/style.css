@@ -1745,6 +1745,10 @@ section:last-child {
   .header-hr {
     margin-top: 20px;
     box-sizing: border-box;
+    opacity: 1;
+    transform: translate(0px 0px);
+    transition: none;
+    
   }
   .header-back {
     background-color: #1b1b1b;
@@ -1832,14 +1836,20 @@ section:last-child {
     height: 268px;
     margin: 0;
   }
-
+  
   .section-header-description {
     font-size: 44px;
     line-height: 50px;
+    opacity: 1;
+    transform: translate(0px 0px);
+    transition: none;
   }
   .section-header-number {
     font-size: 44px;
     line-height: 50px;
+    opacity: 1;
+    transform: translate(0px 0px);
+    transition: none;
   }
   .photo-carusel-list {
     width: 225px;

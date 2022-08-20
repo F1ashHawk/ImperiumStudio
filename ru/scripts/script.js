@@ -213,11 +213,11 @@ document.addEventListener('DOMContentLoaded', function(){
         alert(result.message);
         form.reset();
       }else{
-        alert('Помилка при відправці. Спробуйте пізніше')
+        alert('Ошибка при отправке')
       }
     }
     else {
-      alert("Заповніть обов'язкові поля");
+      alert('Заполните обязательные поля');
     }
   }
 

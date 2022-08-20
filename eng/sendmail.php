@@ -54,9 +54,9 @@
 
     $mail->Body = $body;
     if(!$mail->send()){
-        $message ='Помилка!!!';
+        $message ='Error!!!';
     }else{
-        $message = 'Анкета відправлена!';
+        $message = 'The questionnaire has been sent';
     }
     $response = ['message' => $message];
 

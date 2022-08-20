@@ -26,9 +26,9 @@
     
     if(!empty($_POST)){
         if(!empty($_POST['visa'])){
-        $visa = "no";
+        $visa = "Нет";
         }else{
-        $visa = "yes";
+        $visa = "Есть";
         }
     }
     
@@ -54,10 +54,11 @@
 
     $mail->Body = $body;
     if(!$mail->send()){
-        $message ='Помилка!!!';
+        $message ='Ошибка';
     }else{
-        $message = 'Анкета відправлена!';
+        $message = 'Анкета отправлена!';
     }
+
     $response = ['message' => $message];
 
     header('Content-type: application/json');
